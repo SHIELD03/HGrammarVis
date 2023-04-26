@@ -1,0 +1,22 @@
+{"prompt": "DIVIDE ( COUNT() [ Horsepower > 75 & Horsepower < 125], COUNT() ) > 0.75", "completion": "Most values for Horsepower are in the range 75-125"}
+{"prompt": "DIVIDE ( COUNT() [ Origin = US ], COUNT() [ Origin = Europe ] ) = 2.57", "completion": "Number of items in US is 2.57 times the number of items in Europe"}
+{"prompt": "DIVIDE ( COUNT ( ) [ Hoursepower > Q3 ( Horsepower ) & MPG < Q1 ( MPG ) ] , COUNT ( ) ) > 0.75", "completion": "Most items in the dataset have high Horsepower and low MPG"}
+{"prompt": "DIVIDE ( COUNT () [ Cylinder < 8 & Origin = US] , COUNT () [ Origin = US ]) > 0.75", "completion": "Most items in US below to 8 for Cylinder"}
+{"prompt": "DIVIDE ( COUNT() [ MPG < Q1(MPG) & Weight < Q1(Weight) & Horsepower < Q1 ( Horsepower ) ] , COUNT() [ MPG < Q1 ( MPG ) & Weight < Q1 ( Weight ) ] ) > 0.5", "completion": "Most items with low MPG and low Weight also have low Horsepower"}
+{"prompt": "DIVIDE ( AVG ( price ) [type=suv] , AVG(price) [type=Sedan] ) = 1.76", "completion": "Average retail price of SUV is 1.76 times Sedan"}
+{"prompt": "DIVIDE ( COUNT ( ) [ Orgin = Europe & Displacement < Q1 ( Displacement ) & Weight < Q1 ( Weight ) ], COUNT ( ) [ Orgin = Europe ] ) > 0.75", "completion": "Most items with Origin: Europe have low displacement and low Weight"}
+{"prompt": "CORR ( Acceleration, Displacement) < -0.9", "completion": "Acceleration and Displacement have a strong inverse correlation"}
+{"prompt": "CORR ( displacement, weight) > 0.9", "completion": "Overall, Displacement and Weight have a strong correlation"}
+{"prompt": "CORR ( displacement, weight ) [ origin = japan ] > 0.9 ", "completion": "Items with Origin: Japan exhibit a strong correlation between Displacement and Weight"}
+{"prompt": "MIN ( attribute [ Model = Pontiac Catalina ] ) < Q1 ( attribute ) - 1.5 * IQR
+MAX ( attribute [ Model = Pontiac Catalina ] ) > Q3 ( attribute ) + 1.5 * IQR", "completion": "Pontiac Catalina appears to be an outlier"}
+{"prompt": "MAX ( Horsepower ) [ Model = pontiac ]  = Max ( Horsepower )", "completion": "Pontiac Grand Prix has highest value for Horsepower"}
+{"prompt": "COUNT ( ) [ Origin = Europe ] < Count ( ) [! ( Origin = Europe ) ]", "completion": "Europe has the least number of items"}
+{"prompt": "MIN ( Displacement  ) [ Origin = Europe ] = MIN ( Displacement )", "completion": "Europe has item (Fiat 128) with lowest value for Displacement"}
+{"prompt": "COUNT () [Origin = Europe and Cylinders = 5] > COUNT () [! (Origin = Europe and Cylinders = 5)]", "completion": "The largest group of items in the dataset have Origin: Europe and Cylinders: 5"}
+{"prompt": "COUNT () [ Origin = US ] > COUNT () [ ! ( Origin = US ) ]", "completion": "US has most number of items."}
+{"prompt": "MIN ( Weight ) [ Model = Datsun 1200 & Cylinders = 4 & Origin = Japan] = MIN ( Weight ) [ Model = Datsun 1200] ", "completion": "Datsun 1200 with lowest value for Weight has Cylinders:4 and Origin:Japan"}
+{"prompt": "AVG ( MPG )  [ Orgin = Japan ] > AVG ( MPG ) [ ! ( Origin = Japan ) ]", "completion": "Japan has highest average MPG"}
+{"prompt": "AVG ( Weight ) [Origin = Japan & Cylinders = 4] < AVG ( Weight ) [! (Origin = Japan & Cylinders = 4)]", "completion": "Items with Origin: Japan and Cylinders: 4 have lowest AVG(Weight)"}
+{"prompt": "MIN ( Horsepower ) = 0
+MAX ( Horsepower ) = number", "completion": "The range of horsepower is between 0 and 230"}
